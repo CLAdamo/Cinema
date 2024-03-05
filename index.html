@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Cinema</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <!-- hoja reset css     -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <!-- hoja estilos css -->
+    <link rel="stylesheet" type="text/css" href="styles/styles_prueba.css">
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="contenedor_logo">
+          <img class="imagen_logo" src="styles/imagenes/pelicula.png" alt="">
+          <h3>MisPelis.com</h3>
+        </div>
+        <nav>
+          <ul class="botonera_header">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/index copy.html">Sobre mi</a></li>
+            <li><a href="https://historiadelcine.es/" target="new">Un poco de historia</a></li>
+            <li><a href="https://www.cinesargentinos.com.ar/cartelera/" target="new">Cartelera de cine</a></li>
+          </ul>
+        </nav>
+        <div>
+          <form class="buscador" action="">
+            <input id="input_buscador" type="text" placeholder="Buscar pelicula...">
+            <button id="button_buscador" type="button"><img src="styles/imagenes/buscar.png" alt=""></button>
+          </form>
+        </div>
+      </div>
+      <div id="imagenFondo_header">
+      </div>
+    </header>
+    <main>
+      <article class="centrado">
+        <!-- <h2 class="seccion_peliculas">Mis peliculas</h2> -->
+        <div id="contenedorPeliculas" class="peliculas">
+          <!-- tarjetas -->
+        </div>
+    </article>
+    </main>
+    <footer>
+      <h3>Cristian Adamo © 2024 | Todos los derechos reservados</h3>
+      <nav>
+        <a href="https://www.instagram.com/cristian.adamo.cba/" target="new">
+          <img class="imagen_footer" src="styles/imagenes/instagram (1).png" alt=""/>
+        </a>
+        <a href="https://www.facebook.com/cladamo?locale=es_LA" target="new">
+          <img class="imagen_footer" src="styles/imagenes/facebook.png" alt=""/>
+        </a>
+        <a href="https://www.linkedin.com/in/cristian-leonardo-adamo/" target="new">
+          <img class="imagen_footer" src="styles/imagenes/linkedin.png" alt=""/>
+        </a>
+        <a href="mailto:cristianla_cba@hotmail.com" target="new">
+          <img class="imagen_footer" src="styles/imagenes/email.png" alt=""/>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5493512005839&text&type=phone_number&app_absent=0" target="new">
+          <img class="imagen_footer" src="styles/imagenes/whatsapp.png" alt=""/>
+        </a>
+      </nav>
+    </footer>
+    <!-- <script src="./scripts/tempData.js"></script> -->
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
