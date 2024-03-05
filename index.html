@@ -12,7 +12,7 @@
     <!-- hoja reset css     -->
     <link rel="stylesheet" type="text/css" href="styles/reset.css">
     <!-- hoja estilos css -->
-    <link rel="stylesheet" type="text/css" href="styles/styles_prueba.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
     <header>
@@ -29,19 +29,25 @@
             <li><a href="https://www.cinesargentinos.com.ar/cartelera/" target="new">Cartelera de cine</a></li>
           </ul>
         </nav>
-        <div>
+        <!-- <div>
           <form class="buscador" action="">
             <input id="input_buscador" type="text" placeholder="Buscar pelicula...">
             <button id="button_buscador" type="button"><img src="styles/imagenes/buscar.png" alt=""></button>
           </form>
-        </div>
+        </div> -->
       </div>
       <div id="imagenFondo_header">
       </div>
     </header>
     <main>
       <article class="centrado">
-        <!-- <h2 class="seccion_peliculas">Mis peliculas</h2> -->
+        <div class="buscador">
+          <h2 class="seccion_peliculas">Mis peliculas</h2>
+          <form class="buscador" action="">
+            <input id="input_buscador" type="text" placeholder="Buscar pelicula...">
+            <button id="button_buscador" type="button"><img src="styles/imagenes/buscar.png" alt=""></button>
+          </form>
+        </div>
         <div id="contenedorPeliculas" class="peliculas">
           <!-- tarjetas -->
         </div>

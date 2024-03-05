@@ -131,7 +131,7 @@ const peliculaToHtml = ({ title, year, director, duration, genre, rate, poster }
 
 const imagenHeaderToHtml = (pelicula) => {
   // Extrae propiedades del objeto pelicula utilizando destructuring
-  const { title, year, director, duration, genre, rate, poster } = pelicula;
+  const { title, year, director, duration, genre, poster } = pelicula;
   
   const contenedor = document.createElement("div");
   
@@ -139,8 +139,12 @@ const imagenHeaderToHtml = (pelicula) => {
   `
   <div class="tarjeta_header" style="background-image: url(${poster})">
     <div class="nombre_header">
-      <h3>${title}</h3>
-      <h2 class="estreno">${year}</h2>
+      <div class="title">
+        <h3>${title}</h3>
+      </div>
+      <div class="estreno">
+        <h2>${year}</h2>
+      </div>
       <div class="elementos_tarjeta_header">
         <p><strong>Duracion: </strong>${duration}</p>
         <p><strong>Genero: </strong>${genre.join(", ")}</p>
@@ -200,7 +204,7 @@ const headerImagen = () => {
 };
 
 peliculas();
-setInterval(headerImagen, 5000);
+setInterval(headerImagen, 6000);
 
 
 // https://students-api.2.us-1.fl0.io/movies
