@@ -111,7 +111,17 @@ footer h3{
   margin-left: auto;
   margin-right: auto;
   border-radius: 5px;
+  animation: slideInFromRight 0.3s forwards;
 }
+
+@keyframes slideInFromRight {
+  0%{transform: translateX(100%);}
+  25%{transform: translateX(75%);}
+  50%{transform: translateX(50%);}
+  50%{transform: translateX(25%);}
+  100%{transform: translateX(0);}
+}
+
 
 .nombre_header {
   background-color: rgba(0, 0, 0, 0.8);
@@ -123,7 +133,7 @@ footer h3{
 .title{
   /* background-color: blueviolet; */
   font-family: 'Caveat', cursive;
-  font-size: 44px;
+  font-size: 3em;
   height: 130px;
   display: flex;
   justify-content: center;
@@ -171,10 +181,13 @@ footer h3{
 
 
 .buscador{
-  background-color: rgb(232, 213, 14);
-  border-radius: 5px;
+  /* background-color: rgb(232, 213, 14); */
+  color: white;
+  margin-top: 20px;
+  /* border-radius: 5px; */
   /* padding: 10px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -230,7 +243,7 @@ footer h3{
   margin: 15px;
   border-radius: 10px;
   font-size: 14px;
-  box-shadow: 5px 5px 5px rgb(70, 70, 70);
+  box-shadow: 5px 5px 15px rgb(70, 70, 70);
 }
 
 .tarjetas:hover{
@@ -316,9 +329,9 @@ footer h3{
 .imagen_footer:hover{
   filter: grayscale(0%);
   animation-name: movimientologo;
-	animation-duration: 0.3s;
-	animation-iteration-count: 2;
-	animation-direction: alternate;
+	/* animation-duration: 0.3s; */
+	/* animation-iteration-count: 2; */
+	/* animation-direction: alternate; */
 }
 @keyframes movimientologo {
 	25%{transform: scale(1.1);}
