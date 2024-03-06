@@ -75,17 +75,32 @@ footer h3{
   align-content: center;
 }
 
-.header li{
-  /* height: 40px; */
+/* .header li{
   background-color: black;
   color: white;
   padding: 5px;
-  margin: 5px;
+  margin: 10px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 5px 5px 5px rgb(73, 73, 73);
+} */
+
+.header li{
+  /* background-color: black; */
+  /* color: white; */
+  font-family: 'Caveat', cursive;
+  font-size: 27px;
+  font-weight: bold;
+  text-shadow: 5px 10px 8px black;
+  padding: 2px;
+  margin: 7px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  /* box-shadow: 5px 5px 5px rgb(73, 73, 73); */
 }
 
 .header li:hover{
@@ -183,9 +198,8 @@ footer h3{
 .buscador{
   /* background-color: rgb(232, 213, 14); */
   color: white;
+  text-shadow: 5px 5px 5px white;
   margin-top: 20px;
-  /* border-radius: 5px; */
-  /* padding: 10px; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;

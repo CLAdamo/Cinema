@@ -8,20 +8,11 @@ body {
 }
 
 header{
-  background-color: rgb(232, 213, 14);
+  /* background-color: black; */
+  color: black;
   height: auto;
   padding: 5px;
   border-radius: 10px;
-  color: black;
-}
-
-header input {
-  color: black;
-  background-color: white ;
-  padding: 5px;
-  border-radius: 5px;
-  font-size: 15px;
-  box-shadow: 5px 5px 5px rgb(64, 64, 64);
 }
 
 .header {
@@ -62,16 +53,19 @@ header input {
 }
 
 .header li{
-  /* height: 40px; */
-  background-color: black;
-  color: white;
-  padding: 5px;
-  margin: 5px;
+  /* background-color: black; */
+  /* color: white; */
+  font-family: 'Caveat', cursive;
+  font-size: 27px;
+  font-weight: bold;
+  text-shadow: 5px 10px 8px black;
+  padding: 2px;
+  margin: 7px;
   text-align: center;
   align-items: center;
   justify-content: center;
-  border-radius: 15px;
-  box-shadow: 5px 5px 5px rgb(73, 73, 73);
+  border-radius: 5px;
+  /* box-shadow: 5px 5px 5px rgb(73, 73, 73); */
 }
 
 .header li:hover{
