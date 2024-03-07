@@ -1,6 +1,7 @@
+// console.log(tempData);
 // const { tempData } = require('./tempData');
-
 // import { tempData } from './tempData.js';
+
 
 // const nombreYpuntuacion = document.createElement("div");
   // nombreYpuntuacion.classList.add("nombre_rate");
@@ -68,25 +69,6 @@
   // nuevaTarjeta.appendChild(elementosTarjeta);
   // nuevaTarjeta.appendChild(itemImagen);
 
-// <div class="tarjetas">
-//   <div class="nombre_rate">
-//     <h3>Guardians of the Galaxy Vol. 2</h3>
-//     <div class="rate">
-//       <span>7.7</span>
-//     </div>
-//   </div>
-//   <div class="elementos_tarjeta">
-//     <h3 class="estreno">2017</h3>
-//     <p><strong>Duracion: </strong>2h 16min</p>
-//     <p><strong>Genero: </strong>  Action, Adventure, Comedy</p>
-//     <p><strong>Director: </strong>James Gunn</p>
-//   </div>
-//   <a href=""><img class="imagenes" src="" alt=""></a>
-// </div>
-
-// console.log(tempData);
-
-
 
 const peliculaToHtml = ({ title, year, director, duration, genre, rate, poster }) => {
   // Extrae propiedades del objeto pelicula utilizando destructuring
@@ -138,19 +120,17 @@ const imagenHeaderToHtml = (pelicula) => {
   contenedor.innerHTML = 
   `
   <div class="tarjeta_header" style="background-image: url(${poster})">
-    <div class="nombre_header">
+    <div class="fondo_descripcion">
       <div class="title">
         <h3>${title}</h3>
       </div>
-      <div class="estreno">
-        <h2>${year}</h2>
-      </div>
       <div class="elementos_tarjeta_header">
+        <h2>${year}</h2>
         <p><strong>Duracion: </strong>${duration}</p>
         <p><strong>Genero: </strong>${genre.join(", ")}</p>
         <p><strong>Director: </strong>${director}</p>
       </div>
-    </div>
+    </div>    
   </div>
   
   `
@@ -204,10 +184,12 @@ const headerImagen = () => {
 };
 
 peliculas();
-setInterval(headerImagen, 6000);
+setInterval(headerImagen, 7000);
 
 
 // https://students-api.2.us-1.fl0.io/movies
+
+// https://webpt19b.web.app/data/movies.json
 
 
 
