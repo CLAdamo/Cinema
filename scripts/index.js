@@ -170,14 +170,14 @@ const newHeader = (objetoPeliculas) => {
   };
 
 const peliculas = () => {
-  $.get('https://webpt19b.web.app/data/movies.json', (objetoPeliculas, status) => {
+  $.get('https://students-api.2.us-1.fl0.io/movies', (objetoPeliculas, status) => {
     newTarjetas(objetoPeliculas);
     newHeader(objetoPeliculas);
   });
 };
 
 const headerImagen = () => {
-  $.get('https://webpt19b.web.app/data/movies.json', (objetoPeliculas, status) => {
+  $.get('https://students-api.2.us-1.fl0.io/movies', (objetoPeliculas, status) => {
     newHeader(objetoPeliculas);
     
   });
