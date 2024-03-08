@@ -1,15 +1,13 @@
 body {
   background-color: black;
   padding: 10px;
-  width: 90%;
   margin-left: auto;
 	margin-right: auto;
 }
 
 header{
-  /* background-color: black; */
+  /* background-color: rgb(232, 213, 14); */
   height: auto;
-  padding: 5px;
   border-radius: 10px;
 }
 
@@ -37,7 +35,6 @@ p, h3 {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   background: transparent;
@@ -50,36 +47,33 @@ footer h3{
 }
 
 .header {
-  /* background-color: aqua; */
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
+  width: 100%;
   text-shadow: 1px 1px 2px black;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  align-content: center;
-  margin-bottom: 10px;
+  justify-content: space-around;
   flex-wrap: wrap;
-  align-content: center;
   flex-direction: row;
-  position: relative;
+  margin-bottom: 10px;
+  position: fixed;
   z-index: 10;
-}
-
-.header:hover{
-  background-color: rgba(0, 0, 0, 0.7);;
+  top: 0;
 }
 
 .imagen_logo {
+ 
   height: 50px;
   width: 50px;
   margin-right: 5px;
+  
 }
 
 .contenedor_logo{
   /* background-color: rgb(21, 0, 255); */
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .contenedor_logo h3{
@@ -89,25 +83,30 @@ footer h3{
   margin-top: 20px;
   padding: 0;
 }
-.botonera_header{
+
+nav{
   /* background-color: yellow; */
   display: flex;
+  width: 35%;
+}
+
+.botonera_header{
+  
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  /* height: 100%; */
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .header li{
+  /* background-color: aqua; */
   font-family: 'Caveat', cursive;
-  font-size: 2vw;
+  font-size: 1.6vw;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
-  padding: 2px;
-  margin: 7px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  /* border-radius: 10px; */
-  /* box-shadow: 2px 1px 0px rgb(71, 71, 71); */
 }
 
 a{
@@ -123,87 +122,36 @@ a:hover{
 
 /*//////////////////////////////////////////////////////////////////////////////////*/
 
-.tarjeta_header{
-  color: white;
-  /* margin-top: -70px; */
-  /* background-size: 45% 140%; */
-  background-size: 500px 750px;
-  background-position: 8% -70px;
-  display: flex;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 580px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 25px rgb(91, 91, 91), -2px -2px 15px rgb(91, 91, 91);
-  animation: slideInFromRight 0.3s forwards;
-}
-
-@keyframes slideInFromRight {
-  0%{transform: translateX(100%);}
-  25%{transform: translateX(75%);}
-  50%{transform: translateX(50%);}
-  50%{transform: translateX(25%);}
-  100%{transform: translateX(0);}
-}
-
-.fondo_descripcion{
-  background-color: rgba(0, 0, 0, 0.6);
-  height: 180px;
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  justify-content: center; /* Para alinear horizontalmente */
-  align-items: center; /* Para alinear verticalmente */
-  /* margin-top: 75%; */
-  overflow: hidden;
+.carousel-item::before {
+  content: "";
   position: absolute;
-  bottom: 100px;
-  left: 0;
+  inset: 0;
+  backdrop-filter: blur(5px);
 }
 
-
-.title{
-  /* background-color: blueviolet; */
-  font-family: 'Caveat', cursive;
-  font-size: 3.2vw;
-  text-shadow: 1px 1px 5px black;
-  margin-right: 5%;
-  width: 40%;
-  padding: 5px;
-  text-align: center;
+.carousel-item {
+  margin-top: 55px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: bold;
-}
-
-.elementos_tarjeta_header h2{
-  background-color: rgb(49, 49, 144);
-  border-radius: 10px;
-  color: white;
-  font-size: 1.3vw;
-  width: 60px;
-  font-weight: bold;
-  text-align: center;
-  padding: 3px;
-  margin-bottom: 15px;
-}
-
-.elementos_tarjeta_header{
-  /* background-color: chartreuse; */
-  font-size: 1.2vw;
   text-shadow: 1px 1px 2px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  text-overflow: ellipsis;
+}
+.carousel-item img {
+  max-width: 85%;
+  max-height: 750px;
+  margin: auto;
 }
 
+.carousel-caption img{
+  max-width: 40%;
+  /* margin-bottom: -180px; */
+  box-shadow: 2px 2px 30px rgb(10, 10, 10), -2px -2px 30px rgb(10, 10, 10);
+}
+
+.carousel-caption h1{
+  font-family: 'Caveat', cursive;
+  margin-top: 10px;
+}
 
 /*//////////////////////////////////////////////////////////////////////////////////*/
-
 
 .centrado {
   /* background-color: red; */
@@ -212,7 +160,6 @@ a:hover{
   border-radius: 10px;
   padding: 5px;
 }
-
 
 .buscador{
   /* background-color: rgb(232, 213, 14); */
@@ -243,7 +190,6 @@ a:hover{
 }
 
 #button_buscador img{
-  /* width: 100%; */
   height: 100%;
   border-radius: 5px;
 }
@@ -298,9 +244,9 @@ a:hover{
 .nombre_rate{
   /* background-color: aqua; */
   width: 250px;
-  font-weight: bold;
-  font-size: 18px;
   height: 55px;
+  font-size: 18px;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
