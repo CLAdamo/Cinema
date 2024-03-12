@@ -3,7 +3,7 @@ const imagenHeaderToHtml = (pelicula, index) => {
   const { title, year, director, duration, genre, poster, rate } = pelicula;
 
   if (rate > 8.5) {
-    // console.log(`${title} Rate: ${rate}`);
+    console.log(`${title} Rate: ${rate}`);
   
     const contenedor = document.createElement("div");
     contenedor.classList.add("carousel-item");
