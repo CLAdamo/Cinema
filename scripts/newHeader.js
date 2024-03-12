@@ -6,6 +6,9 @@ const newHeader = (objetoPeliculas) => {
 
   const headerContenedor = document.getElementById('carousel-inner');
   headerContenedor.innerHTML = "";
+
+  // Ordenar los objetos por el valor de la propiedad "rate"
+  objetoPeliculas.sort((a, b) => b.rate - a.rate);
   
   const imagenHeaderHtml = objetoPeliculas.map(imagenHeaderToHtml);
 
