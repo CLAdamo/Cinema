@@ -47,7 +47,7 @@ footer h3{
 }
 
 .header {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
   width: 100%;
   text-shadow: 1px 1px 2px black;
@@ -80,7 +80,7 @@ footer h3{
   /* background-color: blueviolet; */
   font-family: 'Caveat', cursive;
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 0;
 }
 
@@ -96,7 +96,6 @@ nav{
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  /* height: 100%; */
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -104,7 +103,7 @@ nav{
 .header li{
   /* background-color: aqua; */
   font-family: 'Caveat', cursive;
-  font-size: 1.6vw;
+  font-size: 1.7vw;
   font-weight: bold;
   text-shadow: 1px 1px 2px black;
 }
@@ -130,7 +129,7 @@ a:hover{
 }
 
 .carousel-item {
-  margin-top: 55px;
+  margin-top: 50px;
   overflow: hidden;
   text-shadow: 1px 1px 2px black;
 }
@@ -141,14 +140,14 @@ a:hover{
 }
 
 .carousel-caption img{
-  max-width: 40%;
-  /* margin-bottom: -180px; */
+  max-width: 450px;
   box-shadow: 2px 2px 30px rgb(10, 10, 10), -2px -2px 30px rgb(10, 10, 10);
 }
 
 .carousel-caption h1{
   font-family: 'Caveat', cursive;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////*/
