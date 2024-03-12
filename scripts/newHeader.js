@@ -13,7 +13,7 @@ const newHeader = (objetoPeliculas) => {
   const imagenHeaderHtml = objetoPeliculas.map(imagenHeaderToHtml);
 
   // Appendear los elementos HTML al contenedor
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 5 && i < imagenHeaderHtml.length; i++) {
     headerContenedor.appendChild(imagenHeaderHtml[i]);
   };
   console.log(headerContenedor);
