@@ -13,21 +13,10 @@ const newHeader = (objetoPeliculas) => {
   const imagenHeaderHtml = objetoPeliculas.map(imagenHeaderToHtml);
 
   // Appendear los elementos HTML al contenedor
-  imagenHeaderHtml.forEach(function(elemento) {
-    if (elemento !== null){
-      headerContenedor.appendChild(elemento);
-    };
-  });
-
-  // if (i < imagenHeaderHtml.length-1) {
-  //   headerContenedor.appendChild(imagenHeaderHtml[i]);
-  //   i++;
-  // } else {
-  //   headerContenedor.appendChild(imagenHeaderHtml[i]);
-  //   i = 0;
-  // }
-  
-  };
+  for (let i = 0; i < 5; i++) {
+    headerContenedor.appendChild(imagenHeaderHtml[i]);
+  };  
+};
 
 export {newHeader};
 // module.exports = {newHeader};
